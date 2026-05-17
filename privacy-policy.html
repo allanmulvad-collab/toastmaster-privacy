@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · Privatlivspolitik · Personvernerklæring · Integritetspolicy · Datenschutz · Tietosuoja — Toastmaster</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter+Tight:wght@400;500;600&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #f2e7d8;
+      --bg-elev:      #faf1e3;
+      --bg-card:      #fdf6ed;
+      --border:       #d9c4a8;
+      --border-light: rgba(217, 196, 168, 0.45);
+      --text:         #2a1e16;
+      --text-dim:     #5a4538;
+      --text-faint:   #8a7360;
+      --accent:       #a0526b;
+      --accent-bg:    rgba(160, 82, 107, 0.09);
+      --ok:           #3a7a4a;
+      --ok-bg:        rgba(58, 122, 74, 0.08);
+      --ok-border:    rgba(58, 122, 74, 0.2);
+      --blue:         #3a6090;
+      --blue-bg:      rgba(58, 96, 144, 0.08);
+      --blue-border:  rgba(58, 96, 144, 0.2);
+      --nav-h:        52px;
+    }
+
+    html { background: var(--bg); scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      padding: 0 0 96px;
+    }
+
+    /* ── Sticky language nav ── */
+
+    .lang-nav {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: rgba(242, 231, 216, 0.88);
+      backdrop-filter: blur(20px) saturate(1.4);
+      -webkit-backdrop-filter: blur(20px) saturate(1.4);
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      padding: 8px 12px;
+      height: var(--nav-h);
+    }
+
+    .lang-nav a {
+      font-size: 20px;
+      line-height: 1;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      transition: background 0.15s, border-color 0.15s, transform 0.1s;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .lang-nav a span.lang-code {
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+    }
+
+    .lang-nav a:hover {
+      background: var(--accent-bg);
+      border-color: rgba(160, 82, 107, 0.18);
+      transform: translateY(-1px);
+    }
+
+    /* ── Page wrapper ── */
+
+    .wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── Site header ── */
+
+    .site-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin: 40px 0 48px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-header .app-name {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: var(--text);
+    }
+
+    .site-header .app-name span { color: var(--accent); }
+
+    .site-header .doc-type {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-faint);
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+    }
+
+    /* ── Language section ── */
+
+    .lang-section {
+      margin-bottom: 72px;
+      scroll-margin-top: calc(var(--nav-h) + 16px);
+    }
+
+    .lang-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-bg);
+      padding: 4px 10px 4px 8px;
+      border-radius: 6px;
+      margin-bottom: 22px;
+    }
+
+    .lang-badge .flag { font-size: 16px; line-height: 1; }
+
+    /* ── Typography ── */
+
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .updated {
+      font-size: 12px;
+      color: var(--text-faint);
+      margin-bottom: 28px;
+      letter-spacing: 0.02em;
+    }
+
+    h2 {
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-dim);
+      margin-bottom: 12px;
+    }
+
+    p strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+
+    ul li {
+      color: var(--text-dim);
+      padding: 4px 0 4px 18px;
+      position: relative;
+      font-size: 15px;
+    }
+
+    ul li::before {
+      content: '·';
+      position: absolute;
+      left: 5px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    /* ── Highlight box ── */
+
+    .highlight-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 4px 0 24px;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    /* ── Support card ── */
+
+    .support-card {
+      background: var(--ok-bg);
+      border: 1px solid var(--ok-border);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin-top: 36px;
+    }
+
+    .support-card-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--ok);
+      margin-bottom: 14px;
+    }
+
+    .support-card-title svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .support-card p {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 8px;
+    }
+
+    .support-card p:last-child { margin-bottom: 0; }
+
+    .support-card strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .support-card .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      margin-top: 6px;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .support-card .contact-link:hover {
+      background: var(--bg-elev);
+      border-color: var(--accent);
+    }
+
+    /* ── Links ── */
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Divider ── */
+
+    .lang-divider {
+      border: none;
+      border-top: 1px solid var(--border-light);
+      margin: 0 0 72px;
+    }
+
+    /* ── Footer ── */
+
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-light);
+      font-size: 12px;
+      color: var(--text-faint);
+      text-align: center;
+      line-height: 2;
+    }
+
+    footer a { color: var(--text-faint); }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 480px) {
+      .wrapper { padding: 0 16px; }
+      h1 { font-size: 32px; }
+      .lang-nav a span.lang-code { display: none; }
+      .lang-nav a { font-size: 22px; padding: 5px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky flag navigation -->
+  <nav class="lang-nav" aria-label="Language navigation">
+    <a href="#en"><span class="flag">🇬🇧</span><span class="lang-code">EN</span></a>
+    <a href="#da"><span class="flag">🇩🇰</span><span class="lang-code">DA</span></a>
+    <a href="#no"><span class="flag">🇳🇴</span><span class="lang-code">NO</span></a>
+    <a href="#sv"><span class="flag">🇸🇪</span><span class="lang-code">SV</span></a>
+    <a href="#de"><span class="flag">🇩🇪</span><span class="lang-code">DE</span></a>
+    <a href="#fi"><span class="flag">🇫🇮</span><span class="lang-code">FI</span></a>
+  </nav>
+
+  <div class="wrapper">
+
+    <header class="site-header">
+      <div class="app-name">Toast<span>master</span></div>
+      <div class="doc-type">Privacy Policy &amp; Support</div>
+    </header>
+
+    <!-- ════════════════════════════════════════════════ ENGLISH ══ -->
+    <section id="en" class="lang-section" lang="en">
+      <div class="lang-badge"><span class="flag">🇬🇧</span> English</div>
+
+      <h1>Privacy <em>first</em></h1>
+      <p class="updated">Last updated: May 17, 2026</p>
+
+      <div class="highlight-box">
+        <p>Toastmaster collects no personal data. All your information stays on your device — always.</p>
+      </div>
+
+      <h2>What we collect</h2>
+      <p><strong>Nothing.</strong> Toastmaster does not collect, transmit or store any personal information on external servers. There are no user accounts, no sign-up and no login.</p>
+
+      <h2>Local storage</h2>
+      <p>Everything you enter in the app — schedule items, times, names, notes and settings — is stored exclusively on your device using iOS's standard storage mechanism. Your data never leaves your device unless you explicitly export it (e.g. via PDF or a .tsmx file).</p>
+
+      <h2>Analytics and tracking</h2>
+      <ul>
+        <li>No analytics or usage statistics</li>
+        <li>No tracking of behaviour or app usage</li>
+        <li>No crash reporting to external services</li>
+        <li>No advertisements or ad networks</li>
+        <li>No cookies</li>
+      </ul>
+
+      <h2>Sharing with third parties</h2>
+      <p>We do not share data with any third parties because we have no data to share. The only communication with external systems is Apple's App Store for purchase validation (Toastmaster Pro), which is handled directly by Apple and governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+
+      <h2>Children</h2>
+      <p>The app does not collect data from any users, including children under the age of 13.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If we ever change our privacy practices, we will update this page and adjust the date at the top. As the app collects no data, we do not anticipate any material changes.</p>
+
+      <h2>Contact</h2>
+      <p>Questions regarding this privacy policy can be sent to:<br>
+      <a href="mailto:ToastmasterAppPrivacy@gmail.com">ToastmasterAppPrivacy@gmail.com</a></p>
+
+      <div class="support-card">
+        <div class="support-card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Help &amp; Support
+        </div>
+        <p>This page is the official support page for Toastmaster. For questions, bug reports, or feature suggestions, reach us by email:</p>
+        <a href="mailto:ToastmasterAppPrivacy@gmail.com" class="contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          ToastmasterAppPrivacy@gmail.com
+        </a>
+        <p style="margin-top:14px"><strong>Your data:</strong> All data is stored locally on your device. Uninstalling the app permanently removes all data.</p>
+        <p><strong>Restore Toastmaster Pro:</strong> Open the app → Settings → Restore Purchase.</p>
+        <p><strong>Manage subscription:</strong> iPhone Settings → Apple ID → Subscriptions.</p>
+      </div>
+    </section>
+
+    <hr class="lang-divider">
+
+    <!-- ════════════════════════════════════════════════════ DANSK ══ -->
+    <section id="da" class="lang-section" lang="da">
+      <div class="lang-badge"><span class="flag">🇩🇰</span> Dansk</div>
+
+      <h1>Privatliv <em>først</em></h1>
+      <p class="updated">Senest opdateret: 17. maj 2026</p>
+
+      <div class="highlight-box">
+        <p>Toastmaster indsamler ingen persondata. Alle dine oplysninger forbliver på din enhed — altid.</p>
+      </div>
+
+      <h2>Hvad vi indsamler</h2>
+      <p><strong>Ingenting.</strong> Toastmaster indsamler, overfører eller gemmer ingen personoplysninger på eksterne servere. Der er ingen brugerkonti, ingen registrering og ingen login.</p>
+
+      <h2>Lokal lagring</h2>
+      <p>Alt du indtaster i appen — programpunkter, tider, navne, noter og indstillinger — gemmes udelukkende lokalt på din enhed via iOS's standard-lagermekanisme. Dataene forlader aldrig din enhed, medmindre du eksplicit eksporterer dem (fx via PDF eller .tsmx-fil).</p>
+
+      <h2>Analytics og sporing</h2>
+      <ul>
+        <li>Ingen analytics eller brugsstatistik</li>
+        <li>Ingen tracking af adfærd eller brug</li>
+        <li>Ingen crash-rapportering til eksterne tjenester</li>
+        <li>Ingen reklamer eller annoncenetværk</li>
+        <li>Ingen cookies</li>
+      </ul>
+
+      <h2>Deling med tredjeparter</h2>
+      <p>Vi deler ingen data med tredjeparter, fordi vi ikke har nogen data at dele. Den eneste kommunikation med eksterne systemer er Apples App Store til validering af køb (Toastmaster Pro), hvilket er håndteret direkte af Apple og underlagt <a href="https://www.apple.com/legal/privacy/" target="_blank">Apples privatlivspolitik</a>.</p>
+
+      <h2>Børn</h2>
+      <p>Appen indsamler ingen data fra nogen brugere, herunder børn under 13 år.</p>
+
+      <h2>Ændringer til denne politik</h2>
+      <p>Hvis vi nogensinde ændrer vores privatlivspraksis, opdaterer vi denne side og justerer datoen øverst. Da appen ikke indsamler data, forventer vi ingen væsentlige ændringer.</p>
+
+      <h2>Kontakt</h2>
+      <p>Spørgsmål til privatlivspolitikken kan sendes til:<br>
+      <a href="mailto:ToastmasterAppPrivacy@gmail.com">ToastmasterAppPrivacy@gmail.com</a></p>
+
+      <div class="support-card">
+        <div class="support-card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Hjælp &amp; Support
+        </div>
+        <p>Denne side er den officielle supportside for Toastmaster. Kontakt os ved spørgsmål, fejlrapporter eller forslag:</p>
+        <a href="mailto:ToastmasterAppPrivacy@gmail.com" class="contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          ToastmasterAppPrivacy@gmail.com
+        </a>
+        <p style="margin-top:14px"><strong>Dine data:</strong> Alt gemmes lokalt på din enhed. Afinstallering af appen fjerner alle data permanent.</p>
+        <p><strong>Gendan Toastmaster Pro:</strong> Åbn appen → Indstillinger → Gendan køb.</p>
+        <p><strong>Administrer abonnement:</strong> iPhone Indstillinger → Apple-id → Abonnementer.</p>
+      </div>
+    </section>
+
+    <hr class="lang-divider">
+
+    <!-- ════════════════════════════════════════════════════ NORSK ══ -->
+    <section id="no" class="lang-section" lang="no">
+      <div class="lang-badge"><span class="flag">🇳🇴</span> Norsk</div>
+
+      <h1>Personvern <em>først</em></h1>
+      <p class="updated">Sist oppdatert: 17. mai 2026</p>
+
+      <div class="highlight-box">
+        <p>Toastmaster samler ikke inn personopplysninger. All informasjonen din forblir på enheten din — alltid.</p>
+      </div>
+
+      <h2>Hva vi samler inn</h2>
+      <p><strong>Ingenting.</strong> Toastmaster samler ikke inn, overfører eller lagrer personopplysninger på eksterne servere. Det finnes ingen brukerkontoer, ingen registrering og ingen innlogging.</p>
+
+      <h2>Lokal lagring</h2>
+      <p>Alt du legger inn i appen — programpunkter, tider, navn, notater og innstillinger — lagres utelukkende lokalt på enheten din ved hjelp av iOS sin standard lagringsmekanisme. Dataene forlater aldri enheten din med mindre du eksplisitt eksporterer dem (f.eks. via PDF eller .tsmx-fil).</p>
+
+      <h2>Analyse og sporing</h2>
+      <ul>
+        <li>Ingen analyse eller bruksstatistikk</li>
+        <li>Ingen sporing av atferd eller appbruk</li>
+        <li>Ingen krasjrapportering til eksterne tjenester</li>
+        <li>Ingen reklame eller annonsenettverk</li>
+        <li>Ingen informasjonskapsler</li>
+      </ul>
+
+      <h2>Deling med tredjeparter</h2>
+      <p>Vi deler ingen data med tredjeparter fordi vi ikke har noen data å dele. Den eneste kommunikasjonen med eksterne systemer er Apples App Store for kjøpsvalidering (Toastmaster Pro), som håndteres direkte av Apple og er underlagt <a href="https://www.apple.com/legal/privacy/" target="_blank">Apples personvernregler</a>.</p>
+
+      <h2>Barn</h2>
+      <p>Appen samler ikke inn data fra noen brukere, inkludert barn under 13 år.</p>
+
+      <h2>Endringer i denne erklæringen</h2>
+      <p>Hvis vi noen gang endrer vår personvernpraksis, vil vi oppdatere denne siden og justere datoen øverst. Siden appen ikke samler inn data, forventer vi ingen vesentlige endringer.</p>
+
+      <h2>Kontakt</h2>
+      <p>Spørsmål om personvernerklæringen kan sendes til:<br>
+      <a href="mailto:ToastmasterAppPrivacy@gmail.com">ToastmasterAppPrivacy@gmail.com</a></p>
+
+      <div class="support-card">
+        <div class="support-card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Hjelp &amp; Støtte
+        </div>
+        <p>Denne siden er den offisielle supportsiden for Toastmaster. Kontakt oss med spørsmål, feilrapporter eller forslag:</p>
+        <a href="mailto:ToastmasterAppPrivacy@gmail.com" class="contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          ToastmasterAppPrivacy@gmail.com
+        </a>
+        <p style="margin-top:14px"><strong>Dine data:</strong> Alt lagres lokalt på enheten din. Avinstallering av appen fjerner alle data permanent.</p>
+        <p><strong>Gjenopprett Toastmaster Pro:</strong> Åpne appen → Innstillinger → Gjenopprett kjøp.</p>
+        <p><strong>Administrer abonnement:</strong> iPhone Innstillinger → Apple-ID → Abonnementer.</p>
+      </div>
+    </section>
+
+    <hr class="lang-divider">
+
+    <!-- ══════════════════════════════════════════════════ SVENSKA ══ -->
+    <section id="sv" class="lang-section" lang="sv">
+      <div class="lang-badge"><span class="flag">🇸🇪</span> Svenska</div>
+
+      <h1>Integritet <em>först</em></h1>
+      <p class="updated">Senast uppdaterad: 17 maj 2026</p>
+
+      <div class="highlight-box">
+        <p>Toastmaster samlar inte in några personuppgifter. All din information stannar på din enhet — alltid.</p>
+      </div>
+
+      <h2>Vad vi samlar in</h2>
+      <p><strong>Ingenting.</strong> Toastmaster samlar inte in, överför eller lagrar några personuppgifter på externa servrar. Det finns inga användarkonton, ingen registrering och ingen inloggning.</p>
+
+      <h2>Lokal lagring</h2>
+      <p>Allt du anger i appen — programpunkter, tider, namn, anteckningar och inställningar — lagras uteslutande lokalt på din enhet med hjälp av iOS standardlagringsmekanism. Dina data lämnar aldrig din enhet om du inte uttryckligen exporterar dem (t.ex. via PDF eller .tsmx-fil).</p>
+
+      <h2>Analys och spårning</h2>
+      <ul>
+        <li>Ingen analys eller användningsstatistik</li>
+        <li>Ingen spårning av beteende eller appanvändning</li>
+        <li>Ingen kraschrapportering till externa tjänster</li>
+        <li>Ingen reklam eller annonsnätverk</li>
+        <li>Inga cookies</li>
+      </ul>
+
+      <h2>Delning med tredje part</h2>
+      <p>Vi delar inga uppgifter med tredje part eftersom vi inte har några uppgifter att dela. Den enda kommunikationen med externa system är Apples App Store för köpvalidering (Toastmaster Pro), vilket hanteras direkt av Apple och regleras av <a href="https://www.apple.com/legal/privacy/" target="_blank">Apples integritetspolicy</a>.</p>
+
+      <h2>Barn</h2>
+      <p>Appen samlar inte in uppgifter från några användare, inklusive barn under 13 år.</p>
+
+      <h2>Ändringar i denna policy</h2>
+      <p>Om vi någonsin ändrar vår integritetspraxis kommer vi att uppdatera den här sidan och justera datumet längst upp. Eftersom appen inte samlar in några uppgifter förväntar vi oss inga väsentliga ändringar.</p>
+
+      <h2>Kontakt</h2>
+      <p>Frågor om integritetspolicyn kan skickas till:<br>
+      <a href="mailto:ToastmasterAppPrivacy@gmail.com">ToastmasterAppPrivacy@gmail.com</a></p>
+
+      <div class="support-card">
+        <div class="support-card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Hjälp &amp; Support
+        </div>
+        <p>Den här sidan är den officiella supportsidan för Toastmaster. Kontakta oss med frågor, felrapporter eller förslag:</p>
+        <a href="mailto:ToastmasterAppPrivacy@gmail.com" class="contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          ToastmasterAppPrivacy@gmail.com
+        </a>
+        <p style="margin-top:14px"><strong>Dina data:</strong> Allt lagras lokalt på din enhet. Avinstallation tar permanent bort all data.</p>
+        <p><strong>Återställ Toastmaster Pro:</strong> Öppna appen → Inställningar → Återställ köp.</p>
+        <p><strong>Hantera prenumeration:</strong> iPhone Inställningar → Apple-ID → Prenumerationer.</p>
+      </div>
+    </section>
+
+    <hr class="lang-divider">
+
+    <!-- ════════════════════════════════════════════════ DEUTSCH ══ -->
+    <section id="de" class="lang-section" lang="de">
+      <div class="lang-badge"><span class="flag">🇩🇪</span> Deutsch</div>
+
+      <h1>Datenschutz <em>zuerst</em></h1>
+      <p class="updated">Zuletzt aktualisiert: 17. Mai 2026</p>
+
+      <div class="highlight-box">
+        <p>Toastmaster erhebt keine personenbezogenen Daten. Alle Ihre Informationen bleiben auf Ihrem Gerät – immer.</p>
+      </div>
+
+      <h2>Was wir erheben</h2>
+      <p><strong>Nichts.</strong> Toastmaster erhebt, überträgt oder speichert keinerlei personenbezogene Daten auf externen Servern. Es gibt keine Benutzerkonten, keine Registrierung und keine Anmeldung.</p>
+
+      <h2>Lokale Speicherung</h2>
+      <p>Alles, was Sie in der App eingeben – Programmpunkte, Zeiten, Namen, Notizen und Einstellungen – wird ausschließlich lokal auf Ihrem Gerät mithilfe des Standard-Speichermechanismus von iOS gespeichert. Ihre Daten verlassen Ihr Gerät niemals, es sei denn, Sie exportieren sie ausdrücklich (z. B. per PDF oder .tsmx-Datei).</p>
+
+      <h2>Analysen und Tracking</h2>
+      <ul>
+        <li>Keine Analysen oder Nutzungsstatistiken</li>
+        <li>Kein Tracking von Verhalten oder App-Nutzung</li>
+        <li>Keine Absturzberichte an externe Dienste</li>
+        <li>Keine Werbung oder Werbenetzwerke</li>
+        <li>Keine Cookies</li>
+      </ul>
+
+      <h2>Weitergabe an Dritte</h2>
+      <p>Wir geben keine Daten an Dritte weiter, da wir keine Daten haben, die wir weitergeben könnten. Die einzige Kommunikation mit externen Systemen ist der Apple App Store zur Kaufvalidierung (Toastmaster Pro), die direkt von Apple abgewickelt wird und den <a href="https://www.apple.com/legal/privacy/" target="_blank">Datenschutzrichtlinien von Apple</a> unterliegt.</p>
+
+      <h2>Kinder</h2>
+      <p>Die App erhebt keine Daten von Nutzern, einschließlich Kindern unter 13 Jahren.</p>
+
+      <h2>Änderungen dieser Richtlinie</h2>
+      <p>Falls wir unsere Datenschutzpraktiken jemals ändern sollten, werden wir diese Seite aktualisieren und das Datum oben anpassen. Da die App keine Daten erhebt, erwarten wir keine wesentlichen Änderungen.</p>
+
+      <h2>Kontakt</h2>
+      <p>Fragen zu dieser Datenschutzrichtlinie können Sie an uns senden:<br>
+      <a href="mailto:ToastmasterAppPrivacy@gmail.com">ToastmasterAppPrivacy@gmail.com</a></p>
+
+      <div class="support-card">
+        <div class="support-card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Hilfe &amp; Support
+        </div>
+        <p>Diese Seite ist die offizielle Supportseite für Toastmaster. Kontaktieren Sie uns bei Fragen, Fehlerberichten oder Vorschlägen:</p>
+        <a href="mailto:ToastmasterAppPrivacy@gmail.com" class="contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          ToastmasterAppPrivacy@gmail.com
+        </a>
+        <p style="margin-top:14px"><strong>Ihre Daten:</strong> Alle Daten werden lokal auf Ihrem Gerät gespeichert. Das Deinstallieren der App löscht alle Daten dauerhaft.</p>
+        <p><strong>Toastmaster Pro wiederherstellen:</strong> App öffnen → Einstellungen → Kauf wiederherstellen.</p>
+        <p><strong>Abonnement verwalten:</strong> iPhone Einstellungen → Apple-ID → Abonnements.</p>
+      </div>
+    </section>
+
+    <hr class="lang-divider">
+
+    <!-- ══════════════════════════════════════════════════ SUOMI ══ -->
+    <section id="fi" class="lang-section" lang="fi">
+      <div class="lang-badge"><span class="flag">🇫🇮</span> Suomi</div>
+
+      <h1>Yksityisyys <em>ensin</em></h1>
+      <p class="updated">Viimeksi päivitetty: 17. toukokuuta 2026</p>
+
+      <div class="highlight-box">
+        <p>Toastmaster ei kerää henkilökohtaisia tietoja. Kaikki tietosi pysyvät laitteellasi – aina.</p>
+      </div>
+
+      <h2>Mitä keräämme</h2>
+      <p><strong>Emme mitään.</strong> Toastmaster ei kerää, siirrä tai tallenna henkilökohtaisia tietoja ulkoisille palvelimille. Ei käyttäjätilejä, ei rekisteröitymistä eikä kirjautumista.</p>
+
+      <h2>Paikallinen tallennus</h2>
+      <p>Kaikki sovellukseen syöttämäsi tiedot – ohjelmanumerot, ajat, nimet, muistiinpanot ja asetukset – tallennetaan yksinomaan paikallisesti laitteellesi iOS:n vakiotallennusmekanismilla. Tietosi eivät koskaan poistu laitteeltasi, ellet erikseen vie niitä (esim. PDF-tiedostona tai .tsmx-tiedostona).</p>
+
+      <h2>Analytiikka ja seuranta</h2>
+      <ul>
+        <li>Ei analytiikkaa tai käyttötilastoja</li>
+        <li>Ei käyttäytymisen tai sovelluksen käytön seurantaa</li>
+        <li>Ei kaatumisraportteja ulkoisille palveluille</li>
+        <li>Ei mainoksia tai mainosverkostoja</li>
+        <li>Ei evästeitä</li>
+      </ul>
+
+      <h2>Jakaminen kolmansille osapuolille</h2>
+      <p>Emme jaa tietoja kolmansille osapuolille, koska meillä ei ole jaettavia tietoja. Ainoa viestintä ulkoisten järjestelmien kanssa on Applen App Store ostoksen vahvistamiseksi (Toastmaster Pro), jonka Apple hoitaa suoraan <a href="https://www.apple.com/legal/privacy/" target="_blank">Applen tietosuojakäytännön</a> mukaisesti.</p>
+
+      <h2>Lapset</h2>
+      <p>Sovellus ei kerää tietoja keneltäkään käyttäjältä, mukaan lukien alle 13-vuotiaat lapset.</p>
+
+      <h2>Muutokset tähän käytäntöön</h2>
+      <p>Jos muutamme koskaan tietosuojakäytäntöjämme, päivitämme tämän sivun ja muutamme päivämäärän yläosaan. Koska sovellus ei kerää tietoja, emme odota merkittäviä muutoksia.</p>
+
+      <h2>Yhteystiedot</h2>
+      <p>Tätä tietosuojakäytäntöä koskevat kysymykset voidaan lähettää osoitteeseen:<br>
+      <a href="mailto:ToastmasterAppPrivacy@gmail.com">ToastmasterAppPrivacy@gmail.com</a></p>
+
+      <div class="support-card">
+        <div class="support-card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Ohje &amp; Tuki
+        </div>
+        <p>Tämä sivu on Toastmasterin virallinen tukisivu. Ota yhteyttä kysymyksillä, virheilmoituksilla tai ehdotuksilla:</p>
+        <a href="mailto:ToastmasterAppPrivacy@gmail.com" class="contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          ToastmasterAppPrivacy@gmail.com
+        </a>
+        <p style="margin-top:14px"><strong>Tietosi:</strong> Kaikki tallennetaan paikallisesti laitteellesi. Sovelluksen poistaminen poistaa kaikki tiedot pysyvästi.</p>
+        <p><strong>Palauta Toastmaster Pro:</strong> Avaa sovellus → Asetukset → Palauta osto.</p>
+        <p><strong>Hallitse tilausta:</strong> iPhone Asetukset → Apple-tunnus → Tilaukset.</p>
+      </div>
+    </section>
+
+    <footer>
+      Toastmaster &nbsp;·&nbsp; by A. Mulvad &nbsp;·&nbsp;
+      <a href="mailto:ToastmasterAppPrivacy@gmail.com">ToastmasterAppPrivacy@gmail.com</a>
+    </footer>
+
+  </div>
+</body>
+</html>
